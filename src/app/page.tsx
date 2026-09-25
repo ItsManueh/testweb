@@ -15,13 +15,12 @@ export default function Home() {
       <main className="relative z-10">
         <section className="mx-auto max-w-xl px-5 pt-16 text-center">
           <Image
-            src={site.avatar}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${site.avatar}`}
             width={560}
             height={560}
             alt={site.avatarAlt}
             loading="eager"
             fetchPriority="high"
-            unoptimized={site.avatar.endsWith(".svg")}
             className="glow-ring mx-auto size-44 rounded-full border-2 border-border/70 object-cover"
           />
           <h1 className="mt-6 font-display text-4xl font-extrabold tracking-tight">
