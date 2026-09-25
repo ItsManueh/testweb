@@ -11,7 +11,7 @@ export type SiteLink = {
 };
 
 export const site = {
-  name: "models name",
+  name: "model name",
   handle: "@modelname",
   /** Sustituye este archivo en /public por tu propia foto (p. ej. /avatar.jpg). */
   avatar: "/avatar.svg",
